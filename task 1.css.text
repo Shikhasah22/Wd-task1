@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: #ff6347; /* Tomato color */
+}
+
+#content {
+    margin-top: 60px; /* To prevent content from being hidden behind the navbar */
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+section:nth-child(odd) {
+    background-color: #e4e4e4;
+}
+
